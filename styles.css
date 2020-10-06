@@ -1,8 +1,8 @@
 :root {
     --numrows: 16;
-    --primary: #80add7;
-    --secondary: #0abda0;
-    --tertiary: #ebf2ea; 
+    --primary: #DAC6AC;
+    --secondary: #EFA747;
+    --tertiary: #8C7547; 
 }
 
 body {
@@ -12,8 +12,8 @@ body {
 #container {
     display: grid;
     grid-template-columns: repeat(var(--numrows), auto);
-    height: 70vh;
-    width: 70vw;
+    height: 77vh;
+    width: 77vw;
     position: absolute;
     bottom: 3vh;
     left: 3vw;
@@ -21,8 +21,69 @@ body {
 
 #menu {
     position: absolute;
-    top: 5vh;
+    top: 6vh;
+    left: 2vw;
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.title {
+    font-family: Futura;
+    font-size: 3.5vw;
+    position: absolute;
+    top: 6vh;
     right: 5vw;
+    width: 10vw;
+    color: var(--secondary);
+}
+
+.title2 {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    width: 10vw;
+    color: var(--secondary);
+    font-family: Futura;
+    font-size: 2vw;
+}
+
+.topbuttons {
+    height: 10vh;
+    width: 13vw;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: Futura;
+    font-size: 1.8vw;
+}
+
+#dimensions {
+    position: absolute;
+    right: 5vw;
+    bottom: 20vh;
+    width: 10vw; 
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#dim {
+    font-family: Futura;
+    font-size: 1.8vw;
+    color: var(--secondary);
+}
+
+.dbuttons {
+    height: 8vh;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: Futura;
+    font-size: 1.8vw;
 }
 
 .units {
@@ -36,3 +97,5 @@ body {
 .etched {
     background-color: var(--secondary) !important;
 }
+
+*:focus {outline: none !important}

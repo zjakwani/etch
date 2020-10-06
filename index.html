@@ -5,18 +5,20 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div class="title">Etch A Sketch</div>
+        <a class="title2" href="https://github.com/zjakwani">zjakwani</a>
+        <div id="dimensions">
+            <div id="dim">Dimensions</div>
+            <button class="dbuttons" onclick="newGrid(10)">10x10</button>
+            <button class="dbuttons" onclick="newGrid(20)">20x20</button>
+            <button class="dbuttons" onclick="newGrid(40)">40x40</button>
+            <button class="dbuttons" onclick="newGrid(80)">80x80</button>
+        </div>
         <div id="menu">
-            <div id="dimensions">
-                <button onclick="newGrid(10)">10</button>
-                <button onclick="newGrid(20)">20</button>
-                <button onclick="newGrid(40)">40</button>
-                <button onclick="newGrid(80)">80</button>
-            </div>
-            <button id="resetbutton" onclick="resetGrid()">Reset</button>
-            <button id="erasebutton" onclick="toggleEraser()">Eraser</button>
-            <button id="linesbutton" onclick="toggleLines()">Toggle Grid Lines</button>
-            <button id="colorbutton" onclick="changeColor()">Change Colors</button>
-
+            <button class="topbuttons" onclick="changeColor()">Change Theme</button>
+            <button class="topbuttons" onclick="toggleLines()">Toggle Grid Lines</button>
+            <button class="topbuttons" onclick="toggleEraser()">Eraser</button>
+            <button class="topbuttons" onclick="resetGrid()">Reset</button>
         </div>
         <div id="container"></div>
         <script src="script.js"></script>
