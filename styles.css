@@ -1,0 +1,38 @@
+:root {
+    --numrows: 16;
+    --primary: #80add7;
+    --secondary: #0abda0;
+    --tertiary: #ebf2ea; 
+}
+
+body {
+    background-color: var(--tertiary);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(var(--numrows), auto);
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    bottom: 3vh;
+    left: 3vw;
+}
+
+#menu {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+}
+
+.units {
+    background-color: var(--primary);
+}
+
+.bordered {
+    border: 1px solid var(--secondary);
+}
+
+.etched {
+    background-color: var(--secondary) !important;
+}

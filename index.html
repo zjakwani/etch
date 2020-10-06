@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="menu">
+            <div id="dimensions">
+                <button onclick="newGrid(10)">10</button>
+                <button onclick="newGrid(20)">20</button>
+                <button onclick="newGrid(40)">40</button>
+                <button onclick="newGrid(80)">80</button>
+            </div>
+            <button id="resetbutton" onclick="resetGrid()">Reset</button>
+            <button id="erasebutton" onclick="toggleEraser()">Eraser</button>
+            <button id="linesbutton" onclick="toggleLines()">Toggle Grid Lines</button>
+            <button id="colorbutton" onclick="changeColor()">Change Colors</button>
+
+        </div>
+        <div id="container"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
